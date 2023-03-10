@@ -1,0 +1,17 @@
+<div class="border-bottom row" style="margin-bottom:16px; padding-bottom:8px;">
+  <div class="col-9">
+    {% if 'title' in job %}
+    <h3> {{job['title']}}</h3>
+    {% endif %}
+    {% if 'location' in job %}
+    <h4>Location: {{job['location']}}</h4>
+    {% endif %}
+    {% if 'salary' in job %}
+    <h4>Salary: {{job['salary']}}</h4>
+    {% endif %}
+  </div>
+  <div class="col-3">
+    <button type="button" class="btn btn-primary">Primary</button>
+  </div>
+  </div>
+</div>
