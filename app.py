@@ -20,7 +20,7 @@ JOBS = [
 def listJobsHtml():
   return render_template('home.html', jobs=JOBS)
 
-@app.route("api/jobs")
+@app.route("/jobs")
 def listJobsApi():
   return jsonify(JOBS)
 
