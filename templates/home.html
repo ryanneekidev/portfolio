@@ -6,13 +6,8 @@
   </head>
   <body>
     {% include 'header.html' %}
-    <h1>flask webapp</h1>
-    <p>this is a practice project</p>
-    <h1>job listings</h1>
-    <div>
-    {% for job in jobs%}
-      {% include 'jobitem.html' %}
-    {% endfor %}
-    </div>
+    {% include 'hero.html' %}
+    {% include 'features.html' %}
+    {% include 'footer.html' %}
   </body>
 </html>
